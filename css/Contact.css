@@ -1,0 +1,177 @@
+body{
+    display: grid;
+    font-family: Calibri;
+    text-align: justify;
+    grid-template-columns: 0.5fr 0.2fr 0.5fr 0.4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        "whit whit whit whit whit"
+        "nav nav nav nav nav"
+        "h2 bl bl bl bl"
+        "form form form form bl2"
+        "form form form form aD"
+        "form form form form aD"
+        "form form form form oP"
+        "form form form form oP"
+        "bl05 bl05 bl05 bl05 bl05"
+        "ac bl7 BT bl06 kaart"
+        "ac2 bl8 bl8 inFo kaart"
+        "bl9 bl9 bl9 inFo bl0"
+        "footer footer footer footer footer";
+}
+
+.white{
+    grid-area: whit;
+}
+
+.bl{
+    grid-area: bl;
+}
+
+.bl0{
+    grid-area: bl0;
+}
+
+.bl05{
+    grid-area: bl05;
+}
+
+h2{
+    grid-area: h2;
+    margin: 10px;
+    color: #34C1CD;
+}
+.ac{
+    grid-area: ac;
+}
+
+.ac2{
+    grid-area: ac2;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.blokV{
+    background-color: #34C1CD;
+    color: white;
+    width: 60%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blokA{
+    background-color: #34C1CD;
+    color: white;
+    width: 60%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blokED{
+    background-color: #34C1CD;
+    color: white;
+    width: 60%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form input{
+    margin-bottom: 10px;
+    float: right;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+}
+
+#kaart{
+    grid-area: kaart;
+}
+
+
+.oP{
+    grid-area: oP;
+    text-align: center;
+    color: #34C1CD;
+    font-weight: bold;
+}
+
+.aD{
+    text-align: center;
+    grid-area: aD;
+    color: #34C1CD;
+    font-weight: bold;
+}
+
+.bt1{
+    grid-area: BT;
+}
+
+
+/* ___________________ according _________________________ */
+
+.accordion {
+    background-color: #34C1CD;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #248891; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 426px) {
+
+    body{
+        display: grid;
+        font-family: Calibri;
+        text-align: justify;
+        grid-template-columns: 0.5fr 0.2fr 0.5fr 0.4fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header header header header"
+            "whit whit whit whit whit"
+            "nav nav nav nav nav"
+            "h2 bl bl bl bl"
+            "form form form form bl2"
+            "form form form form aD"
+            "form form form form aD"
+            "form form form form oP"
+            "form form form form oP"
+            "bl05 bl05 bl05 bl05 bl05"
+            "ac bl7 BT bl06 bl06"
+            "ac2 bl8 bl8 inFo b"
+            "kaart bl9 bl9 inFo bl0"
+            "footer footer footer footer footer";
+    }
+    #kaart{
+        grid-area: kaart;
+    }
+}

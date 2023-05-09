@@ -1,0 +1,188 @@
+ body{
+    display: grid;
+    font-family: Calibri;
+    text-align: justify;
+    grid-template-columns: 0.3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        "white white white white white"
+        "nav nav nav nav nav"
+        "h2 bl bl bl bl"
+        "p1 p1 p1 p1 ."
+        "bl1 bl1 bl1 bl1 bl1"
+        "bl2 bl2 slid bl5 bl6"
+        "bl3 bl3 slid bl8 bl7"
+        "bl4 bl4 pDot bl9 bl0"
+        "footer footer footer footer footer";
+}
+
+
+.white{
+    grid-area: white;
+}
+
+.p1{
+    grid-area: p1;
+    font-weight: bold;
+    color: hsl(185, 60%, 50%);
+}
+
+h3{
+    grid-area: h2;
+    color: #34C1CD;
+    font-weight: bold;
+}
+
+/* Slider ..... Slider */
+
+.active {
+    background-color: #248891;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #34C1CD;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.pDot{
+    grid-area: pDot;
+    text-align:center
+}
+
+/* Slideshow container */
+.slideshow-container {
+    grid-area: slid;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    max-width: 100%;
+    display: none;
+}
+
+.s1{
+    max-width: 120%;
+}
+.s2{
+    max-width: 120%;
+}
+.s3{
+    max-width: 120%;
+}
+.s4{
+    max-width: 120%;
+}
+.s5{
+    max-width: 120%;
+}
+
+.bl6{
+    grid-area: bl6;
+}
+
+.popup{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    /* z-index: 1; Sit on top */
+    padding-top: 30px; /*Location of the box */
+    left: 400px;
+    top: 150px;
+    width: 30%; /* Full width */
+    height: 20%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    border-radius: 10px;
+}
+
+.popup-content{
+    background-color: #248891;
+    margin: auto;
+    color: #fff;
+    /* padding: 20px;
+    width: 40%; */
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.poplogo{
+    width: 20%;
+    height: 40%;
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #248891;
+    border: #248891;
+}
+
+@media only screen and (max-width: 426px) {
+
+    body{
+        display: grid;
+        font-family: Calibri;
+        text-align: justify;
+        grid-template-columns: 0.3fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header header header"
+            "white white white white"
+            "nav nav nav nav"
+            "bl bl bl bl"
+            "p1 p1 p1 ."
+            "bl1 bl1 bl1 bl1"
+            "bl6 bl6 bl6 bl6"
+            "bl11 bl11 bl11 bl11"
+            "bl2 slid bl5 bl5"
+            "bl3 slid bl7 bl8"
+            "bl4 pDot bl0  bl9"
+            "footer footer footer footer";
+    }
+
+    .p1{
+        grid-area: p1;
+        font-weight: bold;
+        color: hsl(185, 60%, 50%);
+        text-align: center;
+    }
+
+    .contact{
+        margin-right: 25px;
+    }
+    /* Ticket = #1 Hier moet nog wijzigen worden */
+    .popup{
+        left: 90px;
+        top: 150px;
+        width: 70%; /* Full width */
+        height: 20%; /* Full height */
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #34C1CD;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+}

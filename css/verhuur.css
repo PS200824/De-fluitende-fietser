@@ -1,0 +1,108 @@
+body{
+    display: grid;
+    font-family: Calibri;
+    text-align: justify;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header header"
+        "white white white white white white"
+        "nav nav nav nav nav nav"
+        "bl bl bl bl bl bl"
+        "bl1 bl1 bl1 bl1 bl1 bl1"
+        "fot3 tab tab tab form fot1"
+        "bl7 tab tab tab form fot2"
+        "bl5 tab tab tab form bl0"
+        "bl4 bl4 bl4 bl4 bl4 bl2"
+        "div div div div div div"
+        "footer footer footer footer footer footer";
+}
+
+.dIv{
+    grid-area: div;
+}
+
+.white{
+    grid-area: white;
+}
+
+h2{
+    grid-area: h2;
+    color: #34C1CD;
+    font-weight: bold;
+}
+
+
+.table{
+    grid-area: tab;
+}
+
+table{
+    color: #34C1CD;
+    font-weight: bold;
+}
+
+th{
+    height: 60px;
+    width: 100px;
+    color: #34C1CD;
+    font-weight: bold;
+    /* border-color: lightgray;
+    border-radius: 15px;
+    border-style:outset; */
+    text-align: center;
+}
+
+td{
+    height: 50px;
+    width: 200px;
+    /* border-color: black;
+    border-radius: 15px;
+    border-style: groove; */
+    text-align: center;
+}
+
+.check{
+    /* border-color: #34C1CD;
+    border-style: dashed; */
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.img1{
+    grid-area: fot1;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.img2{
+    grid-area: fot2;
+    width: 100%;
+}
+
+.img3{
+    grid-area: fot3;
+    width: 100%;
+}
+
+.bt1{
+    background-color: #34C1CD;
+    color: white;
+    height: 80px;
+    border-radius: 5px;
+    border-color: #34C1CD;
+}
+
+form{
+    grid-area: form;
+    margin-top: 75px;
+    color: black;
+    margin-right: 130px;
+}
+
+@media only screen and (max-width: 426px) {
+    form{
+        margin-right: 0;
+    }
+    
+}

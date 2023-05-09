@@ -1,0 +1,222 @@
+body{
+    display: grid;
+    font-family: Calibri;
+    text-align: justify;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header header"
+        "whit whit whit whit whit whit"
+        "nav nav nav nav nav nav"
+        "bl bl bl bl bl bl"
+        ". . . . . ."
+        "bl1 bl1 bl1 bl1 bl1 bl1"
+        "bl7 gr1 gr1 bl2 gr2 gr2"
+        "div div div div div div"
+        "bl5 gr3 gr3 bl3 gr4 gr4"
+        "bl4 bl4 bl4 bl4 bl4 pDot"
+        "footer footer footer footer footer footer";
+}
+
+.bl4{
+    grid-area: bl4;
+}
+
+.bl{
+    grid-area: bl;
+}
+
+.dIv{
+    grid-area: div;
+}
+
+.white{
+    grid-area: whit;
+}
+
+.img{
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    border-radius: 5px;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.pin{
+    font-weight: bold;
+}
+.img1{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.gr1{
+    grid-area: gr1;
+}
+
+.gr2{
+    grid-area: gr2;
+}
+
+.gr3{
+    grid-area: gr3;
+}
+
+.gr4{
+    grid-area: gr4;
+}
+
+h3{
+    font-size: 80%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    margin-bottom: 200px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close3{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close4{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close4:hover,
+.close4:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bt1{
+    background-color: #000;
+    color: #fefefe;
+    width: 20%;
+}
+
+@media only screen and (max-width: 426px) {
+    body{
+        display: grid;
+        font-family: Calibri;
+        text-align: justify;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header"
+            "whit"
+            "nav"
+            "bl"
+            "."
+            "bl1"
+            "gr1"
+            "gr2"
+            "div"
+            "gr3"
+            "gr4"
+            "bl5"
+            "pDot"
+            "footer";
+    }
+
+    .gr1{
+        grid-area: gr1;
+        width: 100%;
+    }
+    
+    .gr2{
+        grid-area: gr2;
+        width: 100%;
+    }
+    
+    .gr3{
+        grid-area: gr3;
+        width: 100%;
+    }
+    
+    .gr4{
+        grid-area: gr4;
+        width: 100%;
+    }
+    
+
+    .card {
+        width: 100%;
+    }
+}

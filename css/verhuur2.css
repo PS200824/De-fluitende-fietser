@@ -1,0 +1,103 @@
+body{
+    display: grid;
+    font-family: Calibri;
+    text-align: justify;
+    grid-template-columns: 0.2fr 0.4fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header header"
+        "white white white white white white"
+        "nav nav nav nav nav nav"
+        "bl bl bl bl bl bl"
+        "tab form tab1 fietsen . ."
+        "0 p1 in1 bl19 bl18 1"
+        "bl7 p2 in2 bl17 bl17 2"
+        "bl5 p3 in3 bl16 bl16 bl0"
+        "bl2 p4 in4 bl15 bl15 bl6"
+        "bl3 p5 in5 bl14 bl14 bl8"
+        "bl4 bl4 bl4 bl4 bt1 bl9 "
+        "div div div div div div"
+        "footer footer footer footer footer footer";
+}
+
+.dIv{
+    grid-area: div;
+}
+
+.bl{
+    grid-area: bl;
+}
+
+.white{
+    grid-area: white;
+}
+
+
+.bt1{
+    grid-area: bt1;
+    background-color: #34C1CD;
+    color: white;
+    height: 80px;
+    border-radius: 5px;
+    border-color: #34C1CD;
+}
+
+.p1{
+    grid-area: p1;
+    margin-bottom: 10px;
+}
+
+.p2{
+    grid-area: p2;
+    margin-bottom: 10px;
+}
+
+.p3{
+    grid-area: p3;
+    margin-bottom: 10px;
+}
+
+.p4{
+    grid-area: p4;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.p5{
+    grid-area: p5;
+    margin-bottom: 10px;
+}
+
+.in1{
+    grid-area: in1;
+    margin-bottom: 10px;
+}
+
+.in2{
+    grid-area: in2;
+    margin-bottom: 10px;
+}
+
+.in3{
+    grid-area: in3;
+    margin-bottom: 10px;
+}
+
+.in4{
+    grid-area: in4;
+    margin-bottom: 10px;
+}
+
+.in5{
+    grid-area: in5;
+    margin-bottom: 10px;
+}
+
+.fietsen{
+    margin-top: 40px;
+    grid-area: fietsen;
+}
+
+form{
+    grid-area: form;
+}

@@ -1,0 +1,61 @@
+body{
+    display: grid;
+    font-family: Calibri;
+    text-align: justify;
+    grid-template-columns: 0.3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        "whit whit whit whit whit"
+        "nav nav nav nav nav"
+        "h2 bl bl bl bl"
+        "p1 p1 p1 p1 p1"
+        "p1 p1 p1 p1 p1"
+        "p1 p1 p1 p1 p1"
+        ". . foto foto bl2"
+        "footer footer footer footer footer";
+}
+
+.white{
+    grid-area: whit;
+}
+
+h2{
+    grid-area: h2;
+    color: #34C1CD;
+    font-weight: bold;
+}
+/* h3{
+    grid-area: h3;
+    color: #34C1CD;
+    font-weight: bold;
+}
+h4{
+    grid-area: h4;
+    color: #34C1CD;
+    font-weight: bold;
+} */
+.p1{
+    grid-area: p1;
+    color: #34C1CD;
+    font-weight: bold;
+}
+/* .p2{
+    grid-area: p2;
+    color: #34C1CD;
+    font-weight: bold;
+}
+.p3{
+    grid-area: p3;
+    color: #34C1CD;
+    font-weight: bold;
+}
+.ul{
+    grid-area: ul;
+    color: #34C1CD;
+    font-weight: bold;
+} */
+
+.img{
+    grid-area: foto;
+}
